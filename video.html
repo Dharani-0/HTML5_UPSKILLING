@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="400" controls oncanplay="readyMsg()">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+<p id="msg"></p>
+
+<script>
+function readyMsg() {
+    document.getElementById("msg").innerHTML =
+    "Video Ready To Play";
+}
+</script>
+
+</body>
+</html>
